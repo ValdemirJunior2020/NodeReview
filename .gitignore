@@ -1,78 +1,62 @@
-# Node.js
+# Node modules
 node_modules/
-.DS_Store
+package-lock.json
+yarn.lock
+
+# Build outputs
+build/
+dist/
+
+# Temporary files
+tmp/
+logs/
+
+# Development tools
 .env
+.env.*
 
+# IDE specific files
+.idea/
+.vscode/
 
-# Logs
-logs
-*.log
+# Documentation
+docs/
+
+# Testing files
+coverage/
+jest/
+
+# Generated files
+.cache/
+
+# Ignore all .bak files
+*.bak
+
+# Ignore all empty directories
+**/
+
+# Specific examples depending on your project
+.nyc_output/
+cypress/
+
+# Exclude specific files within directories
+package.json:build_script
+
+# Ignore all except listed files in a directory
+some_directory/
+!some_directory/important_file.txt
+
+# Exclude all except listed files with specific extension in a directory
+another_directory/
+!another_directory/*.css
+
+# You can add more patterns as needed
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Dependency directories
-lib
-/*/vendor
-/node_modules
-/.pnp
-.pnp.js
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-
-# vscode
-.vscode/
-
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# JetBrains
-.idea/
-
-# Sublime Text
-.sublime-project
-.sublime-workspace
-
-# VS Code directories
-.vscode/
